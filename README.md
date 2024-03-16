@@ -1,16 +1,21 @@
-# weather_app
 
-A new Flutter project.
+# Mini Curso Flutter: Construindo Aplicativos de Excelência com Flutter
 
-## Getting Started
+Este é um projeto integrante do mini curso ministrado por mim, Luan Albrechetti, na UNIFUNEC de Santa Fé do Sul - São Paulo.
 
-This project is a starting point for a Flutter application.
+O objetivo deste curso é proporcionar uma visão abrangente sobre o desenvolvimento de aplicativos robustos, testáveis e escaláveis utilizando Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+## Conteúdo
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+O curso aborda conceitos fundamentais como Clean Code, SOLID, Design Patterns e Clean Architecture, enfatizando o uso de pacotes e ferramentas frequentemente empregados em projetos comerciais reais.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Objetivo
+
+O propósito principal do curso é proporcionar uma experiência prática no desenvolvimento de aplicativos Flutter para o mundo real, aplicando técnicas e conceitos comumente empregados em projetos de grande escala comercial, e adotando as melhores práticas de desenvolvimento disponíveis.
+
+## Links
+
+- [API utilizada no projeto](https://advisor.climatempo.com.br/)
+- [Layout utilizado](https://www.figma.com/file/9Yi8AJUiwm8iyfnbhlBtd6/Weather-UI?type=design&node-id=0%3A1&mode=design&t=UZvyyu9xqXpn5hPy-1)
+- [Layout DevMode](https://www.figma.com/file/9Yi8AJUiwm8iyfnbhlBtd6/Weather-UI?type=design&node-id=0%3A1&mode=dev&t=UZvyyu9xqXpn5hPy-1)
+- [Linkedin/Contato](https://www.linkedin.com/in/albrechetti/)
