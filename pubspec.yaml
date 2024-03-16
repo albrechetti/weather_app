@@ -1,0 +1,37 @@
+name: weather_app
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  ##
+  ## Core packages
+  ##
+  dartz: ^0.10.1 ##Functional programming dart
+  get_it: ^7.6.7 ##Dependency Injection
+  flutter_bloc: ^8.1.4 ## State Management Pattern
+  go_router: ^13.2.1 ##Routes Management
+  dio: ^5.4.1 ## Http Client
+  geolocator: ^11.0.0
+
+  ##
+  ## UI/Components Packages
+  ##
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  go_router_builder: ^2.4.1
+  logger: ^2.1.0
+  mocktail:
+
+flutter:
+  uses-material-design: true
