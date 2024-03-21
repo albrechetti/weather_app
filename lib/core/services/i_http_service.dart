@@ -1,5 +1,6 @@
 abstract class IHttpService {
-  Future<Map<String, dynamic>> getValue(GetParam param);
+  Future<Map<String, dynamic>> getCityId(GetParam param);
+  Future<Map<String, dynamic>> getWeatherData(GetParam param);
 }
 
 class GetParam {

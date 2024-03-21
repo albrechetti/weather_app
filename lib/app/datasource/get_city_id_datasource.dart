@@ -1,4 +1,4 @@
-import 'package:weather_app/core/services/i_http_service.dart';
+import 'package:weather_app/core/core.dart';
 
 import '../domain/domain.dart';
 import '../infra/infra.dart';
@@ -12,8 +12,11 @@ class GetCityIdDatasource implements IGetCityIdDatasource {
   @override
   Future<Map<String, dynamic>> getCityId(GetCityParam param) async {
     try {
-      final getParam = GetParam(url: '', params: {});
-      final response = await _httpService.getValue(getParam);
+      final getParam = GetParam(url: ApiPaths.city, params: {
+        'latitude': param.lat,
+        'longitude': param.lng,
+      });
+      final response = await _httpService.getCityId(getParam);
       return response;
     } on Exception {
       throw Exception();

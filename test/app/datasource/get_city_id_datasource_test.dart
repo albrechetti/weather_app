@@ -25,14 +25,14 @@ main() {
   });
 
   test('Should return a Map<String, dynamic>', () async {
-    when(() => httpServiceMock.getValue(any()))
+    when(() => httpServiceMock.getCityId(any()))
         .thenAnswer((_) async => cityMock);
     final result = await datasource.getCityId(getCityParam);
     expect(result, isA<Map<String, dynamic>>());
   });
 
   test('Should return a Exception', () async {
-    when(() => httpServiceMock.getValue(any()))
+    when(() => httpServiceMock.getCityId(any()))
         .thenAnswer((_) async => throw Exception());
     final result = datasource.getCityId(getCityParam);
     expect(result, throwsA(isA<Exception>()));

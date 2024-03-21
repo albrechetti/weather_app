@@ -2,7 +2,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:weather_app/app/domain/domain.dart';
 import 'package:weather_app/app/infra/infra.dart';
-import 'package:weather_app/core/core.dart';
 
 class DatasourceMock extends Mock implements IGetCityIdDatasource {}
 
@@ -34,6 +33,13 @@ main() {
     final result = await repository.getCityId(Param());
     final value = result.fold((l) => l, (r) => null);
     expect(value, isA<Exception>());
+  });
+
+  test('Should return ID equal a 1', () async {
+    when(() => datasource.getCityId(any())).thenAnswer((_) async => cityMock);
+    final result = await repository.getCityId(Param());
+    final value = result.fold((l) => null, (r) => r);
+    expect(value!.id, 1);
   });
 }
 
